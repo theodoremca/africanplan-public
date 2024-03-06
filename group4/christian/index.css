@@ -1,0 +1,166 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: white;
+  /* Changed to white background */
+  overflow: hidden;
+  text-align: center;
+  /* Center aligning the navigation links */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Adding shadow */
+}
+
+.navbar a {
+  display: inline-block;
+  /* Display links as blocks */
+  color: #333;
+  /* Changed link color */
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar .logo {
+  padding: 14px 20px;
+  float: left;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.navbar .request-demo {
+  float: right;
+  background-color: #6fc247;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 20px;
+  font-style: manrope;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+}
+.cod {
+  margin-left: 10px;
+}
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: xx-large;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  /* height: 100vh; */
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+
+  /* Adjust the gap between buttons */
+}
+
+.request-demo {
+  /* float: right; */
+  background-color: #6fc247;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 20px;
+  font-style: manrope;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  align-items: center;
+  display: flex;
+}
+
+.signup-button {
+  /* float: right; */
+  background-color: white;
+  border: 1px solid green;
+  color: #6fc247;
+  padding: 14px 20px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.tff {
+  text-align: center;
+  font-size: 25px;
+}
+.tffp {
+  text-align: center;
+  font-size: 15px;
+}
+.images {
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.images img {
+  width: 250px;
+  margin-right: 18px;
+  /* margin-bottom: 8px; */
+  border: 5px solid #f5f5f5;
+}
+.parent-grid-container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.Why-Vaultico {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+.grid-container {
+  /* display: grid ;    grid-template-columns: repeat(3, 1fr);
+    max-width: 90%;
+    margin: 0 auto;
+    gap: 50px; */
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-container div {
+  max-width: 395px;
+}
+
+.text-center {
+  text-align: center;
+}
+.grid-container2 {
+  display: grid;
+  padding-left: 100px;
+  padding-right: 100px;
+
+  grid-template-columns: 30% 70%;
+}

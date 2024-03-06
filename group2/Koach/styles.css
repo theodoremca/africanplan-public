@@ -1,0 +1,195 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    padding: 2rem;
+}
+
+li {
+    padding: 1rem;
+}
+
+.divbtn {
+    margin-inline-end: 2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    margin-inline-start: 2rem;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+.writeup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.btn{
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    background-color: #6FC247;
+    cursor: pointer;
+    color: white;
+}
+
+.btnn {
+    flex: 2;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.imag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.firstimg{
+    height: 30rem;
+    width: 50rem;
+}
+
+.firms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.para{
+    margin-bottom: 3rem;
+}
+
+.firmimg {
+    height: 19rem;
+    width: 70rem;
+}
+
+.background {
+    margin-top: 3rem;
+    background-color: black;
+    width: 100%;
+    height: 20rem;
+    margin-bottom: 3rem
+}
+
+.wv {
+    color: white;
+    text-align: center;
+    padding: 1rem
+}
+
+.write2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.inside-background{
+    display: flex;
+    align-items: center;
+    /* color:  */
+}
+
+.within {
+    color: white;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.secure, .dedication, .reliable{
+    width: 20rem;
+    height: 4rem;
+}
+
+.avm {
+    text-align: center;
+}
+
+.avp {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.pyr {
+    padding :3rem;
+    width: 40rem;
+}
+
+.backgroundtwo{
+    margin-top: 1rem;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: row-reverse;
+    gap: 2rem;
+}
+
+.lastImage{
+    margin: 2rem;
+    height: 25rem;
+    width: 30rem;
+}
+
+
+
+
+/* .testing_flex {
+  flex: 3;
+  display: flex;
+  height: 400px;
+  align-items: flex-end;
+  justify-content: center;
+  padding-inline: 2rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+} */
+
+/* .testing_flex_box.one,
+.testing_flex_box.three,
+.testing_flex_box.two {
+  width: 150px;
+} */
+
+/* .testing_flex.two{
+    align-self: center;
+} */

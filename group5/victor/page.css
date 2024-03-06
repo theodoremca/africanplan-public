@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.cta { 
+    display: flex;
+    justify-content: center;
+    height: 637px;;
+    width: 1260px;
+    margin-left: 126px;
+    margin-top: 100px;
+}
+
+.cta-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 30px 30px;
+    
+}
+
+.nav a, .nav button {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .nav .request-demo{
+    margin-left: 120px;
+    margin-right: 100px;
+  }
+
+#nav-props{
+    font-size: 20px;
+    gap: 100px;
+    color: #636363;
+}
+
+.Lead {
+    padding-top: 64px;
+}
+.logo{
+    width: 169.85px;
+    height: 23px;
+    margin-left: 10px;
+    float: left;
+}
+
+.nav a{
+    display: inline-block;
+    color: #333;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover{
+    background-color: white;
+    color: black;
+}
+
+.nav .logo {
+    padding: 14px 20px;
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav .request-demo{
+    float: right;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.container {
+    display:grid;
+    place-items: center;
+    padding-bottom: 30px;
+    padding-top: 25px;
+}
+
+.btn1-container{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.request-demo{
+    background-color: #6FC247;
+    border:none;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    align-items: center;
+    display: flex;
+    height: 75px;
+    width: 300px;
+    padding: 24px, 40px, 24px, 40px;
+    justify-content: center;
+}
+
+.Signup-btn{
+    background-color: white;
+    color: #6FC247;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: #6FC247;
+    border-style: solid;
+    align-items: center;
+    height: 75px;
+    width: 276px;
+    border-radius: 16px;
+    justify-content: center;
+}
+
+.check {
+    margin-left: 25px;
+  }
+
+.Acc-Val{
+    padding-top: 69px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.grid-cont2{
+    display: grid;
+    padding-left: 100px;
+    padding-right: 100px;
+    grid-template-columns: 1fr 2fr;
+    gap: 90px;
+    justify-content: stretch;
+    padding-top: 40px;
+}
+
+.container2 {
+    display:grid;
+    place-items: center;
+    padding-bottom: 60px;
+    padding-top: 80px;
+    
+}
+
+.h1-Biz{
+    font-size: 65px; 
+    color: #373737;
+}
+
+.p-Valutico{
+    text-align: center;
+    font-size: 24px;
+    line-height: 35px;
+    color:#373737
+}
+.Why-Valutico{
+    background-color: black;
+    height: 400px;
+    justify-content: center;
+    padding-top: 69px
+}
+
+h2{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+.p-award{
+    text-align: center; 
+    color: #D7D7D7; 
+    font-size: 20px
+}
+
+h4{
+    color: white;
+    font-size: 24px
+}
+
+.p-whyval{
+    color: #D7D7D7; 
+    font-size: 20px
+}
+.Accu{
+    font-size: 32px;
+    color: #373737
+}
+

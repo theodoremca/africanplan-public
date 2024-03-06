@@ -1,0 +1,430 @@
+/* Global Reset */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  /* Box-sizing to include padding and border in the element's total width and height */
+  list-style: none;
+  /* Remove default list styles */
+  text-decoration: none;
+  /* Remove default text decoration */
+  margin: 0;
+  /* Reset margin */
+  padding: 0;
+  /* Reset padding */
+  font-family: var(--font-family-base);
+  /* Set base font family */
+}
+
+/* Smooth scrolling behavior for HTML element */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Root Variables */
+:root {
+  /* Color Variables */
+  --color-primary: #6fc247;
+  --color-secondary: #065666;
+  --color-black-text: #373737;
+  --color-black-grey: #636363;
+  --color-white: #ffffff;
+  --color-black-bg: #111111;
+
+  /* Font Variables */
+  --font-family-base: "Manrope", Helvetica, Arial, sans-serif;
+  --font-size-small: 14px;
+  --font-size-normal: 16px;
+  --font-size-medium: 20px;
+  --font-size-large: 24px;
+  --font-size-x-large: 32px;
+  --font-size-xx-large: 40px;
+  --font-size-xxx-large: 64px;
+  --font-weight-regular: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+/* Text Color Classes */
+.primary-text {
+  color: var(--color-primary);
+}
+
+.secondary-text {
+  color: var(--color-secondary);
+}
+
+.nav-text {
+  color: var(--color-black-grey);
+}
+
+.black-text {
+  color: var(--color-black-text);
+}
+
+/* Header Styles */
+header {
+  box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.05);
+  padding: 24px 40px;
+}
+
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.sticky-header.nav-transparent {
+  background-color: transparent;
+}
+
+.header-container {
+  padding: 20px;
+}
+
+
+/* Primary Call to Action Button */
+.primary-cta {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 24px 40px;
+  border: none;
+  border-radius: 16px;
+}
+
+.primary-cta img {
+  padding-left: 16px;
+}
+
+/* Secondary Call to Action Button */
+.secondary-cta {
+  color: var(--color-primary);
+  padding: 24px 71px;
+  border: 1px solid var(--color-primary);
+  border-radius: 16px;
+  background-color: var(--color-white);
+}
+
+/* Flexbox Utilities */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Gap Utilities */
+.gap-54 {
+  gap: 54px;
+}
+
+.gap-32 {
+  gap: 32px;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.hero-section-container {
+  /* max-width: 971px; */
+  margin: 64px auto;
+  /*Center align hero section container */
+  max-width: 78%;
+
+}
+
+/* Font Styles */
+.font-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.hero-section h1 {
+  font-size: var(--font-size-xxx-large);
+}
+
+.font-medium,
+.trusted-companies p,
+.why-valutico-div p,
+.why-valutico-article p,
+.minutes-header p,
+.minutes-article p,
+.primary-cta,
+.secondary-cta {
+  font-size: var(--font-size-medium);
+}
+
+.hero-section p {
+  font-size: var(--font-size-large);
+}
+
+.font-medium {
+  font-weight: var(--font-weight-semibold);
+}
+
+/* Hero Image Styles */
+.hero-img {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* Trusted Companies Section Styles */
+.trusted-companies {
+  max-width: 83%;
+  margin: 119px auto 32px;
+  /* Center align and add margin */
+}
+
+.trusted-companies h2,
+.minutes-header h4 {
+  font-size: var(--font-size-x-large);
+}
+
+/* Company List Styles */
+.companylist {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+.companylist img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Why Valutico Section Styles */
+.why-valutico {
+  margin-top: 119px;
+  background-color: var(--color-black-bg);
+  padding: 72px;
+  color: var(--color-white);
+}
+
+.why-valutico-div {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.why-valutico-div h3 {
+  font-size: var(--font-size-xx-large);
+}
+
+.why-valutico-article {
+  margin-top: 64px;
+  gap: 60px;
+  display: flex;
+  flex-direction: row;
+}
+
+.why-valutico-article h6 {
+  margin-bottom: 24px;
+}
+
+/* Minutes Section Styles */
+.Minutes {
+  max-width: 1300px;
+  margin: 0 auto 69px;
+  justify-content: center;
+}
+
+.minutes-header {
+  max-width: 981px;
+  margin: 60px auto 80px;
+}
+
+.minutes-article {
+  gap: 24px;
+}
+
+.minutes-article div {
+  gap: 8px;
+  padding: 32px;
+  max-width: 490px;
+}
+
+.minutes-article h6,
+.why-valutico-article h6 {
+  font-size: var(--font-size-large);
+}
+
+.minutes-img img {
+  max-width: 100%;
+  width: 731px;
+}
+
+.minutes-body {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Responsive Styles */
+
+@media screen and (max-width: 900px) {
+
+  /* Root Variables */
+  :root {
+
+    /* Font Variables */
+    --font-size-small: 14px;
+    --font-size-xx-large: 20px;
+    --font-size-18: 18px;
+    --font-size-large: 20px;
+    --font-size-x-large: 24px;
+    --font-size-xxx-large: 40px;
+  }
+
+  .hero-section-container {
+    max-width: 100%;
+  }
+
+  .companylist {
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    gap: 12px;
+  }
+
+  .why-valutico-div h3 {
+    font-size: var(--font-size-x-large);
+  }
+
+  .why-valutico-article {
+    flex-direction: column;
+  }
+
+  .why-valutico-article h6 {
+    font-size: var(--font-size-18);
+  }
+
+  .why-valutico-article p {
+    font-size: var(--font-size-normal);
+  }
+
+  .why-valutico-article h6 {
+    font-size: var(--font-size-18);
+  }
+
+  .minutes-article p {
+    font-size: var(--font-size-normal);
+  }
+
+  .minutes-img {
+    width: 369px;
+    height: 500px;
+  }
+
+  .minutes-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .minutes-article div {
+    padding: 16px;
+    max-width: 329px;
+  }
+
+  .minutes-body {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .minutes-header {
+    max-width: 750px;
+    padding: 0 20px;
+  }
+
+  .why-valutico {
+    padding: 20px;
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+  /* Root Variables */
+  :root {
+
+    /* Font Variables */
+    --font-size-small: 14px;
+    --font-size-x-large: 20px;
+    --font-size-large: 16px;
+    --font-size-xxx-large: 32px;
+  }
+
+  /* Primary Call to Action Button */
+  .primary-cta {
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: var(--font-size-small);
+  }
+
+  .primary-cta img {
+    padding-left: 10px;
+  }
+
+  /* Secondary Call to Action Button */
+  .secondary-cta {
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: var(--font-size-small);
+  }
+
+  .gap-32 {
+    gap: 8px;
+  }
+
+  .trusted-companies {
+    max-width: 92%;
+  }
+
+  .companylist {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .why-valutico-div p {
+    font-size: var(--font-size-normal);
+  }
+
+  .minutes-header p {
+    font-size: var(--font-size-normal);
+  }
+
+  .minutes-body {
+    flex-direction: column-reverse;
+  }
+
+  .minutes-img {
+    width: 300px;
+    height: 310px;
+  }
+}

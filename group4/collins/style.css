@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+/* MY CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  background-color: #fff;
+  transition: all 0.5s ease;
+  padding: 30px 0;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+  padding: 0 25px;
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  /* min-width: 100px; */
+  font-size: 17px;
+  transition: all;
+  border-radius: 5px;
+}
+
+nav ul li ul a {
+  padding: 10px 25px;
+  display: block;
+}
+nav ul li ul a:hover {
+  display: block;
+  transition: all;
+  width: 100%;
+  border-bottom: 2px solid #6ed938;
+  border-radius: 4px;
+}
+
+nav ul li:hover ul {
+  display: block;
+  transition: all 0.5s ease;
+}
+
+nav ul li ul li {
+  display: block;
+}
+
+.cta-btn {
+  display: flex;
+  gap: 15px;
+  color: #fff;
+  background-color: #6fc247;
+  border-radius: 10px;
+  font-size: 0.8em;
+  padding: 14px 25px;
+  cursor: pointer;
+  border: 0;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.cta-btn:hover {
+  background-color: #6ed938;
+  transition: all 0.5s ease;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cta-btn-outline {
+  color: #6fc247;
+  border: 2px solid #6fc247;
+  border-radius: 10px;
+  font-size: 0.8em;
+  padding: 14px 45px;
+  cursor: pointer;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  background: transparent;
+}
+
+.cta-btn-outline:hover {
+  background-color: #dbdbdb;
+  transition: all 0.5s ease;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+  text-align: center;
+  overflow: hidden;
+  z-index: 1;
+  padding: 50px;
+}
+.hero h1 {
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 1.5;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hero p {
+  max-width: 90%;
+  margin: 10px auto;
+  opacity: 0.6;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  width: 69%;
+}
+
+.hero-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.showcase {
+  padding: 20px;
+}
+.showcase-img {
+  background-image: url(/images/showcase-img.svg);
+  width: auto;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.logos {
+  /* padding: 60px; */
+  text-align: center;
+}
+
+.logos h2 {
+  font-weight: 900;
+  font-size: 32px;
+}
+
+.logos p {
+  font-weight: 500;
+  font-size: 20px;
+  width: 93%;
+  margin: 15px auto;
+}
+/* .logos img {
+    width: 23%;
+    margin: 0 1%;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #eee;
+    padding: 5px;
+  }
+   */
+/* @media (max-width: 800px) {
+    .logos img {
+      width: 48%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logos img {
+      width: 100%;
+    }
+  } */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; /* Three columns with equal width */
+  grid-gap: 10px; /* Gap between grid items */
+  padding: 50px;
+}
+
+.grid-item {
+  background-color: #eee;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item img {
+  width: 120px;
+}
+
+.why {
+  background-color: #000;
+  text-align: center;
+  color: white;
+  padding: 3rem;
+  margin: 20px 0;
+}
+
+.why > h1 {
+  font-size: 30px;
+}
+
+.why > p {
+  font-size: 20px;
+  width: 75%;
+  margin: 20px auto;
+}
+
+.why-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: left;
+}
+.why-container h4 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.why-container p {
+  width: 77%;
+}
+
+.valuations {
+  text-align: center;
+  padding: 30px;
+}
+.valuations > div > h2 {
+  font-weight: 800;
+  margin: 10px 0;
+}
+
+.valuations > div > p {
+  font-size: 15px;
+  font-weight: 600;
+  width: 65%;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.valuations-img-container {
+  margin-top: 40px;
+  display: flex;
+  flex-basis: 1;
+  /* max-width: 90%; */
+  padding: 20px;
+  gap: 30px;
+  padding: 30px;
+}
+
+.value-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.valuations button {
+  margin: 40px auto;
+}

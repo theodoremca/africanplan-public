@@ -1,0 +1,66 @@
+
+const hdsStudents = ["Ezekiel","Theresa","Cosy","Koach"];
+
+function myCallbackfn(item,index,myArray){
+ console.log(item);
+}
+
+hdsStudents.forEach(myCallbackfn);
+
+hdsStudents.forEach(function (value,index,array){
+    console.log(value);
+    console.log(index);
+    console.log(array);
+});
+
+hdsStudents.forEach((value,index,array)=>{
+    console.log(value);
+    console.log(index);
+    console.log(array);
+});
+console.log("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");  // new line
+const APStudents = ["Ezekiel","Theresa","Cosy","Koach"];
+function APSCallbackfn(item,index,myArray){
+    if(index == 0){
+        return item.toLowerCase();
+    }
+    if(index == myArray.length-1){
+        return item.toUpperCase();
+    }
+    return {value:item};
+}
+const newValue = APStudents.map(APSCallbackfn)
+const newValue1 = APStudents.map(function (item,index,myArray){
+    if(index == 0){
+        return item.toLowerCase();
+    }
+    if(index == myArray.length-1){
+        return item.toUpperCase();
+    }
+    return {value:item};
+})
+
+const newValue2 = APStudents.map((item,index,myArray)=>{
+    if(index == 0){
+        return item.toLowerCase();
+    }
+    if(index == myArray.length-1){
+        return item.toUpperCase();
+    }
+    return {value:item};
+})
+console.log(newValue);
+
+
+
+
+
+
+
+
+
+
+
+
+
+

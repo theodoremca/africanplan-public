@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en" style="zoom: 80%">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>04-03-2024: Assignment</title>
+
+    <style>
+      :root {
+        /* colors */
+        --white-100: #fff;
+        --white-200: #f9f9f9;
+        --white-300: #d7d7d7;
+
+        --black-100: #000;
+        --black-200: #636363;
+        --black-300: #373737;
+        --black-400: #111111;
+
+        --blue-100: #065666;
+
+        --green-100: #6fc247;
+
+        /* sizing */
+        --screen-max-width: 94.5rem;
+        --border-radius: 1rem;
+        --font-size: 1rem;
+        --gap: 1rem;
+
+        /* fonts */
+        --manrope: "Manrope", sans-serif;
+      }
+
+      *,
+      *::before,
+      *::after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+
+      body {
+        background-color: var(--white-100);
+        font-size: var(--font-size);
+        font-family: var(--manrope);
+      }
+
+      /* util styles */
+
+      ul {
+        list-style-type: none;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .flexbox {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* header */
+
+      .header__top {
+        z-index: 2;
+        padding: 2rem 6.5rem;
+        box-shadow: 0 0 0.25rem 0.25rem rgba(0, 0, 0, 0.05);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: var(--white-100);
+      }
+
+      .header__top-wrapper {
+        width: min(100%, var(--screen-max-width));
+        justify-content: space-between;
+      }
+
+      .header__logo {
+        width: max-content;
+      }
+
+      .header__nav ul {
+        gap: 3.25rem;
+      }
+
+      .header__nav ul li a {
+        gap: 1rem;
+      }
+
+      .header__nav ul li a.active span {
+        color: var(--blue-100);
+      }
+
+      .header__nav ul li a span {
+        color: var(--black-200);
+        font-size: 1.25rem;
+        font-weight: 700;
+      }
+
+      .header__cta {
+        height: 4.75rem;
+        width: 17.5rem;
+        border-radius: var(--border-radius);
+        overflow: hidden;
+      }
+
+      .header__cta a {
+        width: inherit;
+        height: inherit;
+        background-color: var(--green-100);
+        gap: var(--gap);
+      }
+
+      .header__cta a span {
+        color: var(--white-100);
+        font-size: 1.25rem;
+        font-weight: 700;
+      }
+
+      .header__bottom {
+        margin: 12.75rem 17rem 0 17rem;
+      }
+
+      .header__hero {
+        flex-direction: column;
+        gap: calc(var(--gap) * 2);
+      }
+
+      .header__hero h1 {
+        font-size: 4rem;
+        font-weight: 800;
+        text-transform: capitalize;
+      }
+
+      .header__hero p {
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+
+      .header__hero p,
+      .header__hero h1 {
+        color: var(--black-300);
+        text-align: center;
+        width: 60.5rem;
+      }
+
+      .header__hero div {
+        gap: calc(var(--gap) * 2);
+      }
+
+      .header__hero div a {
+        height: 4.75rem;
+        width: 17.5rem;
+        border-radius: var(--border-radius);
+        overflow: hidden;
+      }
+
+      .header__hero div a:nth-of-type(1) {
+        gap: var(--gap);
+        background-color: var(--green-100);
+      }
+
+      .header__hero div a:nth-of-type(2) {
+        border: 0.0625rem solid var(--green-100);
+      }
+
+      .header__hero div a span {
+        font-size: 1.25rem;
+        font-weight: 700;
+      }
+
+      .header__hero div a:nth-of-type(1) span {
+        color: var(--white-100);
+      }
+
+      .header__hero div a:nth-of-type(2) span {
+        color: var(--green-100);
+      }
+
+      /* main */
+
+      .main__wrapper {
+        margin: 4rem 0rem;
+      }
+
+      .main__wrapper > section {
+        margin: 0rem 8rem;
+      }
+
+      .main__image {
+        width: 100%;
+        height: 40rem;
+        margin: 0 !important;
+      }
+
+      .main__image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .main__trusted {
+        flex-direction: column;
+        gap: calc(var(--gap) * 2);
+        padding-top: 7.5rem;
+      }
+
+      .main__trusted-top {
+        flex-direction: column;
+        gap: var(--gap);
+      }
+
+      .main__trusted-top h3 {
+        font-size: 2rem;
+        font-weight: 800;
+      }
+
+      .main__trusted-top p {
+        font-size: 1.25rem;
+        font-weight: 500;
+        width: 66.5rem;
+        text-align: center;
+      }
+
+      .main__trusted-bottom {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: calc(var(--gap) + calc(var(--gap) / 2)) var(--gap);
+      }
+
+      .main__trusted-bottom span {
+        height: 7.25rem;
+        width: 19.25rem;
+        background-color: var(--white-200);
+        overflow: hidden;
+      }
+
+      .main__trusted-bottom span img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .main__trusted-bottom span:nth-of-type(3) img {
+        width: 80%;
+        padding-right: 0.5rem;
+      }
+
+      .main__trusted-bottom span:nth-of-type(6) img {
+        width: 80%;
+      }
+
+      .main__trusted-bottom span:nth-of-type(12) img {
+        scale: 2;
+      }
+
+      .main__trusted-bottom span:nth-of-type(1) img,
+      .main__trusted-bottom span:nth-of-type(4) img {
+        width: 75%;
+      }
+
+      .main__trusted-bottom span:nth-of-type(2) img,
+      .main__trusted-bottom span:nth-of-type(7) img {
+        scale: 1.75;
+      }
+
+      .main__trusted-bottom span:nth-of-type(5) img,
+      .main__trusted-bottom span:nth-of-type(10) img,
+      .main__trusted-bottom span:nth-of-type(11) img {
+        scale: 1.25;
+      }
+
+      .main__why {
+        flex-direction: column;
+        gap: var(--gap);
+        padding: 4.5rem 6.5rem;
+        background-color: var(--black-400);
+        margin: 7.5rem 0 4.25rem 0 !important;
+      }
+
+      .main__why h3 {
+        font-size: 2.5rem;
+        font-weight: 800;
+        color: var(--white-100);
+      }
+
+      .main__why > p {
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: var(--white-300);
+        width: 55.75rem;
+        text-align: center;
+      }
+
+      .main__why ul {
+        gap: calc(var(--gap) * 3.75);
+        margin-top: 3rem;
+      }
+
+      .main__why ul li {
+        gap: var(--gap);
+        color: var(--white-300);
+        font-size: 1.25rem;
+        font-weight: 500;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .main__why ul li h4 {
+        font-size: 1.5rem;
+        font-weight: 800;
+        color: var(--white-100);
+      }
+
+      .main__why ul li p {
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: var(--white-300);
+        width: 24.75rem;
+      }
+
+      .main__valuations {
+        flex-direction: column;
+      }
+
+      .main__valuations > * {
+        width: 100%;
+      }
+
+      .main__valuations-top {
+        flex-direction: column;
+        gap: var(--gap);
+      }
+
+      .main__valuations-top h3 {
+        font-size: 2rem;
+        font-weight: 800;
+        color: var(--black-300);
+      }
+
+      .main__valuations-top p {
+        font-size: 1.25rem;
+        font-weight: 500;
+        color: var(--black-300);
+        width: 66.25rem;
+        text-align: center;
+      }
+
+      .main__valuations-bottom {
+        margin-block: 5rem;
+        gap: 5.25rem;
+      }
+
+      .main__valuations-bottom ul {
+        flex-direction: column;
+        gap: calc(var(--gap) * 3.25);
+      }
+
+      .main__valuations-bottom ul li {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 29.75rem;
+        padding: 2rem;
+        color: var(--black-300);
+        gap: calc(var(--gap) / 2);
+      }
+
+      .main__valuations-bottom ul li h4 {
+        font-size: 1.5rem;
+        font-weight: 800;
+      }
+
+      .main__valuations-bottom ul li p {
+        width: 25.75rem;
+        font-size: 1.25rem;
+        font-weight: 500;
+      }
+
+      .main__valuations-bottom aside {
+        height: 43.5rem;
+        width: 45.75rem;
+        overflow: hidden;
+      }
+
+      .main__valuations-bottom aside img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .main__valuations-cta {
+        height: 4.75rem;
+        width: 17.5rem;
+        border-radius: var(--border-radius);
+        overflow: hidden;
+      }
+
+      .main__valuations-cta a {
+        width: inherit;
+        height: inherit;
+        background-color: var(--green-100);
+        gap: var(--gap);
+      }
+
+      .main__valuations-cta a span {
+        color: var(--white-100);
+        font-size: 1.25rem;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- header starts -->
+      <header class="header">
+        <section class="header__top flexbox">
+          <div class="header__top-wrapper flexbox">
+            <div class="header__logo">
+              <img src="./logo.svg" alt="header__logo" />
+            </div>
+
+            <nav class="header__nav flexbox">
+              <ul class="flexbox">
+                <li>
+                  <a href="#" class="flexbox active">
+                    <span>Home</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flexbox">
+                    <span>Solutions</span>
+                    <i class="flexbox">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_1_109)">
+                          <path
+                            d="M6.84619 9L12.8462 15L18.8462 9"
+                            stroke="#636363"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1_109">
+                            <rect
+                              width="24"
+                              height="24"
+                              fill="white"
+                              transform="translate(0.846191)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flexbox">
+                    <span>Your work</span>
+                    <i class="flexbox">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_1_109)">
+                          <path
+                            d="M6.84619 9L12.8462 15L18.8462 9"
+                            stroke="#636363"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1_109">
+                            <rect
+                              width="24"
+                              height="24"
+                              fill="white"
+                              transform="translate(0.846191)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flexbox">
+                    <span>Company</span>
+                    <i class="flexbox">
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_1_109)">
+                          <path
+                            d="M6.84619 9L12.8462 15L18.8462 9"
+                            stroke="#636363"
+                            stroke-width="1.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1_109">
+                            <rect
+                              width="24"
+                              height="24"
+                              fill="white"
+                              transform="translate(0.846191)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </i>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+
+            <div class="header__cta">
+              <a href="#" class="flexbox">
+                <span>Request a Demo</span>
+                <i class="flexbox">
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_114)">
+                      <path
+                        d="M9.84619 11L12.8462 14L20.8462 6"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M20.8462 12V18C20.8462 18.5304 20.6355 19.0391 20.2604 19.4142C19.8853 19.7893 19.3766 20 18.8462 20H6.84619C6.31576 20 5.80705 19.7893 5.43198 19.4142C5.05691 19.0391 4.84619 18.5304 4.84619 18V6C4.84619 5.46957 5.05691 4.96086 5.43198 4.58579C5.80705 4.21071 6.31576 4 6.84619 4H15.8462"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_114">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(0.846191)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </i>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section class="header__bottom">
+          <div class="header__hero flexbox">
+            <h1>the world's leading business valuation software</h1>
+
+            <p>
+              Valutico provides the financial services industry and valuation
+              experts with data-driven tools to perform accurate company
+              valuations faster and more accurately than ever before.
+            </p>
+
+            <div class="flexbox">
+              <a href="#" class="flexbox">
+                <span>Request a Demo</span>
+                <i class="flexbox">
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_114)">
+                      <path
+                        d="M9.84619 11L12.8462 14L20.8462 6"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M20.8462 12V18C20.8462 18.5304 20.6355 19.0391 20.2604 19.4142C19.8853 19.7893 19.3766 20 18.8462 20H6.84619C6.31576 20 5.80705 19.7893 5.43198 19.4142C5.05691 19.0391 4.84619 18.5304 4.84619 18V6C4.84619 5.46957 5.05691 4.96086 5.43198 4.58579C5.80705 4.21071 6.31576 4 6.84619 4H15.8462"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_114">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(0.846191)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </i>
+              </a>
+
+              <a href="#" class="flexbox">
+                <span>Sign up/Login</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </header>
+      <!-- header ends -->
+
+      <!-- main starts -->
+      <main class="main">
+        <div class="main__wrapper">
+          <section class="main__image flexbox">
+            <img src="./main-image.png" alt="valutico_mock_image" />
+          </section>
+
+          <section class="main__trusted flexbox">
+            <div class="main__trusted-top flexbox">
+              <h3>Trusted by Hundreds of Financial Firms in 75 Countries</h3>
+              <p>
+                Our team of more than 50 employees is globally distributed and
+                serves both national and international clients in over 75
+                countries.
+              </p>
+            </div>
+
+            <div class="main__trusted-bottom">
+              <span class="flexbox">
+                <img src="./trusted-1.png" alt="allinial global logo" />
+              </span>
+              <span class="flexbox">
+                <img src="./trusted-2.png" alt="oaklins logo" />
+              </span>
+              <span class="flexbox">
+                <img src="./trusted-3.png" alt="russell bredford logo" />
+              </span>
+              <span class="flexbox">
+                <img src="./trusted-4.png" alt="crowe logo" />
+              </span>
+              <span class="flexbox">
+                <img src="./trusted-5.png" alt="bcrh logo" />
+              </span>
+              <span class="flexbox">
+                <img src="./trusted-6.png" alt="praxity logo" />
+              </span>
+              <span class="flexbox">
+                <img src="./trusted-7.png" alt="bakertilly logo" />
+              </span>
+              <span class="flexbox">
+                <img src="./trusted-8.png" alt="standard charted logo" />
+              </span>
+              <span class="flexbox">
+                <img src="./trusted-9.png" alt="pandea logo" />
+              </span>
+              <span class="flexbox">
+                <img src="./trusted-10.png" alt="global m&a logo" />
+              </span>
+              <span class="flexbox">
+                <img src="./trusted-11.png" alt="cdi global logo" />
+              </span>
+              <span class="flexbox">
+                <img src="./trusted-12.png" alt="rodl logo" />
+              </span>
+            </div>
+          </section>
+
+          <section class="main__why flexbox">
+            <h3>Why Valutico</h3>
+
+            <p>
+              An award-winning fintech providing a range of company valuation
+              solutions, Valutico provides the financial services industry and
+              valuation experts with data-driven tools.
+            </p>
+
+            <ul class="flexbox">
+              <li class="flexbox">
+                <h4>Secure</h4>
+                <p>
+                  Private by default, creating a safe space around your projects
+                  and your data.
+                </p>
+              </li>
+
+              <li class="flexbox">
+                <h4>Reliable</h4>
+                <p>Created by valuation experts for valuation professionals.</p>
+              </li>
+
+              <li class="flexbox">
+                <h4>Dedicated to your success</h4>
+                <p>
+                  24/7 support and multi-language capabilities to support your
+                  needs.
+                </p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="main__valuations flexbox">
+            <div class="main__valuations-top flexbox">
+              <h3>Accurate Valuations in Minutes</h3>
+              <p>
+                Find the company data you need in seconds, with 3TB of global
+                financial data featuring almost 1 million transactions and over
+                50,000 thousand comparable peers
+              </p>
+            </div>
+
+            <div class="main__valuations-bottom flexbox">
+              <ul class="flexbox">
+                <li class="flexbox">
+                  <h4>Personalise Your Reports</h4>
+                  <p>
+                    Save hours transferring results from spreadsheet to slides,
+                    by exporting your results to Powerpoint and Word templates
+                    effortlessly.
+                  </p>
+                </li>
+
+                <li class="flexbox">
+                  <h4>28 Valuation Method Options</h4>
+                  <p>
+                    From loss-making companies to mature enterprises, and from
+                    startups to SME's, value businesses of any type using
+                    multiple valuation methods.
+                  </p>
+                </li>
+
+                <li class="flexbox">
+                  <h4>Fast Access to Premium Data</h4>
+                  <p>
+                    Access the most highly-trusted global databases of company
+                    financial data to locate the figures you need.
+                  </p>
+                </li>
+              </ul>
+
+              <aside class="flexbox">
+                <img
+                  src="./valuations-image.jpeg"
+                  alt="an image of someone holding a pen and writing"
+                />
+              </aside>
+            </div>
+
+            <div class="main__valuations-cta">
+              <a href="#" class="flexbox">
+                <span>Request a Demo</span>
+
+                <i class="flexbox">
+                  <svg
+                    width="25"
+                    height="24"
+                    viewBox="0 0 25 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_114)">
+                      <path
+                        d="M9.84619 11L12.8462 14L20.8462 6"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M20.8462 12V18C20.8462 18.5304 20.6355 19.0391 20.2604 19.4142C19.8853 19.7893 19.3766 20 18.8462 20H6.84619C6.31576 20 5.80705 19.7893 5.43198 19.4142C5.05691 19.0391 4.84619 18.5304 4.84619 18V6C4.84619 5.46957 5.05691 4.96086 5.43198 4.58579C5.80705 4.21071 6.31576 4 6.84619 4H15.8462"
+                        stroke="white"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_114">
+                        <rect
+                          width="24"
+                          height="24"
+                          fill="white"
+                          transform="translate(0.846191)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </i>
+              </a>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!-- main ends -->
+    </div>
+  </body>
+</html>

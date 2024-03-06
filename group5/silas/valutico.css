@@ -1,0 +1,280 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: "Manrope", sans-serif;
+}
+.background {
+    background-color:#fff;
+    background-size: 100%;
+}
+header {
+    box-shadow: 1px 5px 6px -1px #e2e1e1;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+#banner{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    width: 90%;
+    padding: 40px 10px;
+}
+
+nav{
+    width: 40%;
+}
+
+nav ul{
+    display:flex;
+    justify-content: space-around;
+    list-style: none;
+
+}
+nav ul li:first-child a{
+    color:rgb(27, 27, 161);
+}
+
+a{
+    text-decoration:none;
+}
+
+
+nav li a {
+    text-decoration: none !important;
+    color:black;
+    cursor:pointer;
+    font-weight: 700;
+    display:flex;
+    gap:4px;
+   
+}
+nav li a img{
+    width:24px;
+    height: 24px;
+}
+
+.btn-holder button{
+border:none;
+background-color: #6fc247;
+color:#fff;
+padding:15px 25px;
+border-radius:9px;
+font-size:20px;
+font-weight:700;
+cursor:pointer;
+}
+
+.logo{
+    width:15%;
+}
+
+.banner-text {
+    width: 80%;
+    margin:50px auto;
+    text-align: center;
+    color: white;
+}
+.banner-text h1 {
+
+    font-size: 64px;
+    font-weight: 800;
+    line-height: 87px;
+    text-align: center;
+    color:#373737;
+}
+.banner-text p {
+   
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:#373737;
+}
+
+.banner-btn {
+ display:flex;
+ justify-content: space-around;
+ align-items:center;
+ width: 35%;
+ margin:50px auto;
+}
+
+#left-button button{
+    border: none;
+    background-color: #6fc247;
+    color:#fff;
+    padding: 15px 25px;
+    border-radius: 7px;
+    font-size:17px;
+}
+#right-button button{
+    border: 1px solid green;
+    background-color:  #fff;
+    color:green;
+    border-radius: 7px;
+    padding: 15px 25px;
+    font-size:17px;
+}
+#left-button button a {
+    color:#fff;
+    font-weight: 700;
+}
+#right-button button a {
+    color:green;
+    font-weight: 700;
+}
+#Bodyimage {
+        width: 80% ;
+        margin:50px auto;
+      }
+
+img {
+        width:100%;
+    }
+    
+
+/* }
+#left-button button a{
+    color:#fff;
+}
+#right-button button a{
+    color:green;
+}
+.banner-btn a:hover span {
+    width: 100%;
+  }
+  
+  .banner-btn a:hover {
+    color: #000;
+  } */
+
+.images-section h2 {
+    color:black;
+    font-size:25px;
+    text-align:center
+}
+.images-section p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 43px;
+    text-align: center;
+    color:#0c0b0b;
+    padding-top:30px;
+}
+.image-parent {
+    display:flex;
+    flex-wrap : wrap;   
+    margin:20px auto;
+    width:90%;
+    justify-content:space-around;
+}
+
+.image-child {
+    width: 23%;
+}
+
+
+.back-parent{
+    background-color:#000;
+    margin:30px auto;
+    width: 100%;
+    padding:40px 3px;
+}
+.back-parent h2 {
+    color:#fff;
+    font-size:30px;
+    text-align:center;
+    padding-bottom:10px;
+}
+
+.back-parent p {
+    color:#fff;
+    font-size:20px;
+    text-align:center;
+    width:75%;
+    margin:10px auto;
+}
+.align {
+    display:flex;
+    justify-content: space-around;
+    margin:30px auto;
+    width:90%;
+
+}
+
+.back-child h3 {
+    color:#fff;
+    padding-bottom:20px;
+}
+
+.back-child p {
+    color:#fff;
+    text-align:start;
+    width: 80%;
+    margin:0;
+}
+
+
+
+.final-parent h2 {
+    color:black;
+    font-size:30px;
+    text-align:center
+}
+
+.final-parent p.item {
+    width: 70%;
+    margin:7px auto;
+    text-align:center;
+    font-size:20px;
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    width:80%;
+    margin:15px auto;
+    
+}
+
+.final-parent p {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 43px;
+    text-align: start;
+    color:#0c0b0b;
+    padding-bottom:30px;
+
+}
+#final-child {
+    width:40%;
+    padding:20 auto;
+}
+
+.last-image {
+    width:45%;
+}
+
+.btn-holders button{
+    border:none;
+    background-color: #6fc247;
+    color:#fff;
+    padding:15px 25px;
+    border-radius:9px;
+    font-size:20px;
+    font-weight:700;
+    cursor:pointer;  
+    }
+    
+.btn-holders {
+    width: 15%;
+    margin: 20px
+    auto;
+}
+
+/* .myboarder {
+    border:6px solid green;
+    margin:3%;
+} */

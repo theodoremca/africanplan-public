@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+
+body {
+    
+    background-color: white;
+    color: #333;
+}
+header {
+    width: 100%;
+    height: 120px;
+    padding: 30px 103px;
+    position: sticky;
+    top: 0;
+    align-content: center;
+    font-family: 'Manrope';
+    box-shadow: 4px 4px 5px #00000014;
+    background: white;
+    z-index: 9;
+}
+nav {
+    width: 100%;
+    display: flex;
+    gap: 108px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+}
+.logo {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    text-transform: mixed;
+}
+
+button {
+    color: #f5f5f5;
+    width: 200px;
+    border: none;
+    border-radius: 9px;
+    background-color: #6FC247;
+    /* transition: all 0.4s ease 0s; */
+    height: 50px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;   
+
+}
+main{
+    width: 100%;
+    height: auto;
+}
+.section1 {
+    /* display: flex; */
+    align-items: center;
+    justify-content:space-between;
+    padding-top: 20px;
+    text-align: center;
+    margin-top: 50px;
+    max-width: 971px;
+    margin: 0 auto;
+
+
+}
+.head-content{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding-top: 50px;
+    text-align:center;
+    font-family: 'Manrope';
+    padding-bottom: 50px;
+}
+.header1 {
+    font-size: 60px;
+     /* line-height: 15px;  */
+    font-family: "Manrope";
+    line-height: auto;
+
+}
+
+.p1{
+    font-size: 24;
+    line-height: 43.2px; 
+    font-family: "Manrope";
+    line-height: auto;
+    font-style: bold;
+}
+
+.main_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    text-align: center;
+    gap: 32px;
+    font-family: 'Manrope';
+
+}
+.signDiv{
+    background-color: #6FC247;
+}
+.sign{
+    padding: 10px;
+    background-color: white;
+    color:black;
+    border: 1px solid #6FC247;
+}
+
+.section2{
+    display: flex;
+    align-content:center;
+}
+.imageBody{
+    display: block;
+    align-content: center;
+    padding-top: 50px;
+}
+.pic{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 1260px;
+    height: 637px;
+
+    
+}
+.picimg{
+    width: 100%;
+} 
+.section2{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    padding: 0px 115px
+
+}
+.section2div{
+    display: flex;
+    width:100%;
+    height:120px;
+    align-content: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+    padding-left: 120px;
+
+}
+.h2section2 {
+    padding-left: 70px;
+    display: flex;
+    text-align: center;
+}
+
+.psection2 {
+    padding-top: 10px;
+    display: flex;
+    text-align: center;
+}
+.picdiv {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 18px;
+}
+.picdiv {
+    gap: 1rem;
+    padding-top: 20px;
+}
+.individualPics {
+    width: 250px;
+    height: 120px;
+}
+
+.section3 {
+    width: 1512px;
+    height: 456px;
+    margin-top: 70px;
+    padding: 72px 103px 72px 103px;
+    background-color: black;
+
+}
+.sec3div {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    width:1306px;
+    height: 312px;
+    gap: 64px;
+    color: white !important;
+}
+
+.sec3div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 893px;
+    height: 131px;
+    gap: 10px;
+    padding-left: 105px;
+}
+.sec3div2 {
+    display: flex;
+    width: 1306px;
+    height: 117px;
+    height: 117px;
+    justify-content:space-between;
+    gap: 24px;
+
+}
+.sec3p{
+    font-family: Manrope;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #D7D7D7;
+}
+.sec3indiv {
+    width: 395px;
+    height: 117px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.sec3indiv1{
+    display: flex;
+    flex-direction: column;
+    width: 380px;
+    height: 101px;
+    gap: 20px;
+}
+.sec3div2p {
+    /* font-family: Manrope;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: justify;
+    color: #D7D7D7; */
+    width: 438px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #D7D7D7; 
+
+}
+.sec3p2{
+    /* width: 395px;
+    height: 60px; */
+    width: 320px;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #D7D7D7;
+
+}
+
+.section4{
+    display: flex;
+    flex-direction: column;
+    width: 1510px;
+    height: 1186px;
+    padding: 69px 103px;
+    gap: 80px;
+}
+.sec4div1 {
+    display: flex;
+    flex-direction: column;
+    width: 1062px;
+    height: 120px;
+    gap: 16px;
+    align-items: center;
+}
+.sec4div1 h2{
+    width: 489px;
+    height: 44px;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #373737;
+}
+.sec4div1 p{
+    width: 1062px;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #373737;
+
+}
+.sec4div2{
+    display: flex;
+    flex-direction: row;
+    width: 1304px;
+    height: 693px;
+    gap: 85px;
+}
+.writeups {
+    display: flex;
+    flex-direction:column;
+    width: 477px;
+    height:693px;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+.writeups div{
+    width: 477px;
+    height:225px;
+    padding: 32px;
+    border-radius: 16px;
+    gap: 10px;
+}
+.writeupsDiv {
+    display: flex;
+    flex-direction: column;
+    width: 413px;
+    height: 161px;
+    gap: 10px;
+}
+.word{
+    width: 350px;
+    height: 33px;
+    font-family: Manrope;
+    font-size: 24px;
+    font-weight: 800px;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #373737;
+    font-style: bold !important;
+}
+.para {
+    width: 413px;
+    height: 120px;
+    font-size: 20px;
+    font-weight: 500px;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+    font-style: bold !important;
+}
+.lastImage{
+    width: 731px;
+    height: 693px;
+}
+.lastDemo{
+    display: flex;
+    align-self: center;
+}

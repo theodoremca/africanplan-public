@@ -1,0 +1,318 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border:1px solid red; */
+}
+body {
+    background-color: white;
+}
+nav {
+    width: 100%;
+    height: 150px;
+    background-color: white;
+    position: sticky;
+    margin-top: -20px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #f5f5f5;
+    overflow: hidden;
+    top: 0; 
+}
+.logo {
+    flex-basis: 20%;
+}
+.logo img{
+    width: 250px;
+    padding-left: 100px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li{
+    display: inline-block;
+    padding: 15px 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: 60
+}
+.links {
+    padding-right: 60px;
+}
+.btn {
+    width: 200px;
+    height: 70px;
+    /* border-radius:  margin-right: 10px;30px; */
+    border-radius: 30px;
+    background-color: 6FC247;
+    cursor: pointer;
+    color : white;
+}
+.divbtn .btn i {
+    color : white;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.divbtn {
+    margin: 100px;
+}
+.wlb {
+    font-size: 50px;
+    text-align: center;
+    padding-top: 80px;
+}
+.vs {
+    text-align: center;
+    font-size: 50px;
+}
+.writeup {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 50px; margin-right: 10px;
+}
+.bby {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    margin-right: 10px;
+}
+button{
+    border: none;
+    outline: none;
+}
+.btn2{
+    width: 150px;
+    height: 50px;
+    border-radius:  10px;
+    background-color: #6FC247;
+    text-decoration: none;
+    cursor: pointer;
+    color : white;
+}
+.btn3 {
+    width: 150px;
+    height: 50px;
+    margin-left: 20px;  
+    border-radius:  10px;
+    background-color: white;
+    border: 2px solid #6FC247;
+    cursor: pointer;
+    color : #6FC247;
+}
+.btn2 .aa {
+    color: white;
+}
+a {
+    text-decoration: none;
+    color: #6FC247;
+}
+.bby .btn2 a i {
+    color : white;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.bigimg{
+    width: 1260px;
+    height: 637px;
+    padding-top: 60px;
+    align-items: center;
+}
+.tf {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+.write{
+    text-align: center;
+    font-size: 15px;
+    padding-top: 20px; margin-right: 10px;
+}
+.images{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.images img{
+    width: 290px;
+    border: 7px solid  #f5f5f5;
+    margin-right: 18px;
+}
+.background {
+    background-color: black;
+    width: 100%;
+    height: 370px;
+    margin-top: 100px;
+}
+.wv {
+    color: white;
+    padding-top: 40px;
+    text-align: center;
+}
+.write2 {
+    color : white;
+    padding-top: 20px;
+    text-align: center;
+}
+.inside-background{
+    display: flex;
+    align-items: center;
+    color: #f5f5f5;
+    justify-content: center;
+    padding: 90px 103px 0 103px; 
+}
+.inside-background > *+*{
+    margin-left: 60.5px;
+}
+.secure {
+   width: 395px;
+   height: 117px;
+    color: #f5f5f5;
+}
+.secure h3 {
+    font-size: 20px;
+}
+.secure p {
+    padding-top: 13px;
+    font-size: 15px;
+}
+.reliable {
+    widows: 395px;
+    height: 117px;
+    color: #f5f5f5; 
+}
+.reliable h3 {
+    font-size: 20px;
+}
+.reliable p {
+    padding-top: 13px;
+    font-size: 15px;
+}
+.dedication {
+    widows: 395px;
+    height: 117px;
+    color: #f5f5f5; 
+}
+.dedication h3 {
+    font-size: 20px;
+}
+.dedication p {
+    font-size: 15px;
+}
+.avm {
+    text-align: center;
+    padding-top: 50px;
+    font-size: xx-large;
+}
+.avp {
+    text-align: center;
+    padding-top: 20px;
+
+}
+.background2 {
+    background-color: white;
+    width: 1304px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:center;
+    padding-top: 80px;
+}
+.pyr{
+    width:477px;
+    height: 225px;
+    padding: 32px;
+}
+.pyr2{
+    height: 195px;
+}
+.background2-texts > *+*{
+    margin-top: 20px;
+}
+.lastimg{
+    width: 731px;
+    height: 693px;
+    height: 693px;
+}
+.pyr h4{
+    padding-bottom: 8px;
+}
+.divbtn5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    margin-right: 10px;
+
+}
+.btn5 {
+    width: 278px;
+    height: 75px;
+    border-radius:  10px;
+    background-color: #6FC247;
+    text-decoration: none;
+    cursor: pointer;
+    color : white;
+    margin-bottom: 50px;
+}
+
+
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .logo {
+      flex-basis: 30%; /* Increase logo size for better visibility */
+    }
+    .logo img {
+      width: 200px; /* Reduce logo width */
+      padding-left: 20px; /* Adjust logo padding */
+    }
+    .links {
+      display: none; /* Hide navigation links on smaller screens */
+    }
+    nav {
+      height: auto; /* Adjust navigation height to accommodate logo */
+      flex-direction: column; /* Stack elements vertically */
+      justify-content: center; /* Align elements to center */
+    }
+    .divbtn {
+      margin: 20px; /* Adjust button margin */
+    }
+    .bby {
+      flex-direction: column; /* Stack buttons vertically */
+      align-items: center; /* Align buttons to center */
+    }
+    .writeup,
+    .write,
+    .inside-background,
+    .background2 {
+      padding: 20px; /* Adjust padding for better spacing */
+    }
+    .bigimg {
+      width: 100%; /* Make the image responsive */
+      height: auto; /* Maintain aspect ratio */
+    }
+    .images img {
+      width: 100%; /* Make images responsive */
+      margin-right: 0; /* Remove right margin for images */
+      margin-bottom: 20px; /* Add bottom margin for spacing */
+    }
+    .background2 {
+      width: 100%; /* Make background2 section responsive */
+    }
+    .lastimg {
+      width: 100%; /* Make the image responsive */
+      height: auto; /* Maintain aspect ratio */
+    }
+  }
+  
